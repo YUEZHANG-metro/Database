@@ -58,6 +58,14 @@ WHERE airport.iso_country = country.iso_country and country.name = 'Iceland';
 
 ## question2
 SELECT airport.name AS 'airport name' 
+FROM airport, country 
+WHERE airport.iso_country = country.iso_country 
+AND country.name = 'France' 
+AND airport.type = 'large_airport';
+![q2 where](https://github.com/user-attachments/assets/821e47a1-9509-4e6b-9807-ace1117c40df)
+
+
+SELECT airport.name AS 'airport name' 
 FROM airport 
 JOIN country 
 WHERE airport.iso_country = country.iso_country 
@@ -67,6 +75,13 @@ and airport.type = 'large_airport';
 
 ## question 3
 SELECT country.name AS 'country_name', airport.name AS 'airport_name'
+FROM airport, country
+WHERE airport.iso_country = country.iso_country
+AND airport.continent = 'an';
+![q3 where](https://github.com/user-attachments/assets/371c6cb2-dced-41b1-b779-1c054bcc3c14)
+
+
+SELECT country.name AS 'country_name', airport.name AS 'airport_name'
 FROM airport
 JOIN country
 ON airport.iso_country = country.iso_country 
@@ -74,6 +89,12 @@ and airport.contient = 'an';
 ![q3](https://github.com/user-attachments/assets/0af13523-71c9-4463-8357-9c45e9f49948)
 
 ## question 4
+SELECT airport.elevation_ft
+FROM airport, game
+WHERE game.location = airport.ident
+AND game.screen_name = 'Heini';
+![q4 where](https://github.com/user-attachments/assets/72c7dae2-e657-4f1b-a799-b6deac919c02)
+
 SELECT airport.elevation_ft
 FROM airport
 JOIN game
@@ -83,6 +104,13 @@ WHERE game.screen_name = 'Heini';
 
 ## question 5
 SELECT airport.elevation_ft * 0.3048 AS elevation_m
+FROM airport, game
+WHERE game.location = airport.ident
+AND game.screen_name = 'Heini';
+![q5 where](https://github.com/user-attachments/assets/3cdebc45-5221-47e0-8c1a-9c5865ae91b4)
+
+
+SELECT airport.elevation_ft * 0.3048 AS elevation_m
 FROM airport
 JOIN game
 On game.location = airport.ident
@@ -91,6 +119,12 @@ WHERE game.screen_name = 'Heini';
 
 ## question 6
 SELECT airport.name
+FROM airport, game
+WHERE game.location = airport.ident
+AND game.screen_name = 'Ilkka';
+![q6 where](https://github.com/user-attachments/assets/9fc578ab-51c0-4833-bab4-55cc99cde895)
+
+SELECT airport.name
 FROM airport
 JOIN game
 On game.location = airport.ident
@@ -98,6 +132,14 @@ WHERE game.screen_name = 'Ilkka';
 ![q6](https://github.com/user-attachments/assets/6b75b03f-cc9b-431a-b1d8-c7bcbaf15467)
 
 ## question 7
+SELECT country.name
+FROM airport, game, country
+WHERE game.location = airport.ident
+AND airport.iso_country = country.iso_country
+AND game.screen_name = 'Ilkka';
+![q7 where](https://github.com/user-attachments/assets/577d9a71-50ba-43b4-b8a3-5073a36f00f4)
+
+
 SELECT country.name
 FROM airport
 JOIN game
@@ -109,6 +151,13 @@ WHERE game.screen_name = 'Ilkka';
 
 
 ## question 8
+SELECT goal.name
+FROM goal, goal_reached, game
+WHERE goal.id = goal_reached.goal_id
+AND game.id = goal_reached.game_id
+AND game.screen_name = 'Heini';
+![q8 where](https://github.com/user-attachments/assets/a12e973e-268d-4193-a50b-c3084d225f62)
+
 SELECT goal.name 
 FROM goal 
 JOIN goal_reached 
@@ -119,6 +168,15 @@ WHERE game.screen_name = 'Heini';
 ![q8](https://github.com/user-attachments/assets/ac3bb3e8-f481-4a1d-99c1-d911b534e253)
 
 ## question 9
+SELECT airport.name
+FROM airport, game, goal_reached, goal
+WHERE game.location = airport.ident
+AND game.id = goal_reached.game_id
+AND goal.id = goal_reached.goal_id
+AND game.screen_name = 'Ilkka'
+AND goal.name = 'clouds';
+![q9 where](https://github.com/user-attachments/assets/d9fe88c1-3e08-499b-905a-d8e2ce2f21d3)
+
 SELECT airport.name
 FROM airport
 JOIN game
@@ -133,6 +191,17 @@ AND goal.name = 'clouds';
 
 
 ## question 10
+SELECT country.name
+FROM country, airport, game, goal_reached, goal
+WHERE airport.iso_country = country.iso_country
+AND game.location = airport.ident
+AND game.id = goal_reached.game_id
+AND goal.id = goal_reached.goal_id
+AND game.screen_name = 'Ilkka'
+AND goal.name = 'clouds';
+![q10 where](https://github.com/user-attachments/assets/406df64a-10fd-480b-8cb1-31790140d8a6)
+
+
 SELECT country.name
 FROM country
 JOIN airport
