@@ -4,7 +4,8 @@
 SELECT name,type 
 FROM airport 
 WHERE iso_country = 'FI';
-![q1](https://github.com/user-attachments/assets/9fef7dff-8950-4002-8a7d-6a439b26a598)
+![q1](https://github.com/user-attachments/assets/218016e3-237c-44dc-8cd4-7959a50e4d1e)
+
 
 ## question 2
 SELECT name,type 
