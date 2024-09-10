@@ -1,17 +1,21 @@
 
 #week 3
 ## question 1
-SELECT name,type FROM airport 
+SELECT name,type 
+FROM airport 
 WHERE iso_country = 'FI';
 ![q1](https://github.com/user-attachments/assets/9fef7dff-8950-4002-8a7d-6a439b26a598)
 
 ## question 2
-SELECT name,type FROM airport 
+SELECT name,type 
+FROM airport 
 WHERE iso_country = 'FI';
 <img width="493" alt="q2" src="https://github.com/user-attachments/assets/c42bed1f-580f-40e0-9a09-777944be3466">
 
 ## question 3
-SELECT name FROM airport WHERE iso_country = 'FI' ORDER BY name ASC;
+SELECT name FROM airport 
+WHERE iso_country = 'FI' 
+ORDER BY name ASC;
 <img width="677" alt="q3" src="https://github.com/user-attachments/assets/cd8bddc5-47f2-4cc9-9216-66108238245a">
 
 ## question 4
