@@ -86,7 +86,7 @@ SELECT country.name AS 'country name', airport.name AS 'airport name'
 FROM airport, country 
 WHERE airport.iso_country = country.iso_country and country.name = 'Iceland';
 ```
-![q1](week3/week e3/q1.png)
+![q1](week3/weeke3/q1.png)
 
 ## question2
 ```
@@ -96,7 +96,7 @@ WHERE airport.iso_country = country.iso_country
 AND country.name = 'France' 
 AND airport.type = 'large_airport';
 ```
-![q2where](week3/week e3/q2 where.png)
+![q2where](week3/weeke3/q2where.png)
 
 ```
 SELECT airport.name AS 'airport name' 
@@ -106,7 +106,7 @@ WHERE airport.iso_country = country.iso_country
 and country.name = 'France' 
 and airport.type = 'large_airport';
 ```
-![q2](week3/week e3/q2.png)
+![q2](week3/weeke3/q2.png)
 
 ## question 3
 ```
@@ -115,7 +115,7 @@ FROM airport, country
 WHERE airport.iso_country = country.iso_country
 AND airport.continent = 'an';
 ```
-![q3where](week3/week e3/q3 where.png)
+![q3where](week3/weeke3/q3where.png)
 
 ```
 SELECT country.name AS 'country_name', airport.name AS 'airport_name'
@@ -124,7 +124,7 @@ JOIN country
 ON airport.iso_country = country.iso_country 
 and airport.contient = 'an';
 ```
-![q3](week3/week e3/q3.png)
+![q3](week3/weeke3/q3.png)
 
 ## question 4
 ```
@@ -133,7 +133,7 @@ FROM airport, game
 WHERE game.location = airport.ident
 AND game.screen_name = 'Heini';
 ```
-![q4where](week3/week e3/q4 where.png)
+![q4where](week3/weeke3/q4where.png)
 
 ```
 SELECT airport.elevation_ft
@@ -142,7 +142,7 @@ JOIN game
 On game.location = airport.ident
 WHERE game.screen_name = 'Heini';
 ```
-![q4](week3/week e3/q4.png)
+![q4](week3/weeke3/q4.png)
 
 ## question 5
 ```
@@ -151,7 +151,7 @@ FROM airport, game
 WHERE game.location = airport.ident
 AND game.screen_name = 'Heini';
 ```
-![q5where](week3/week e3/q5 where.png)
+![q5where](week3/weeke3/q5where.png)
 
 ```
 SELECT airport.elevation_ft * 0.3048 AS elevation_m
@@ -160,7 +160,7 @@ JOIN game
 On game.location = airport.ident
 WHERE game.screen_name = 'Heini';
 ```
-![q5](week3/week e3/q5.png)
+![q5](week3/weeke3/q5.png)
 
 ## question 6
 ```
@@ -169,7 +169,7 @@ FROM airport, game
 WHERE game.location = airport.ident
 AND game.screen_name = 'Ilkka';
 ```
-![q6where](week3/week e3/q6 where.png)
+![q6where](week3/weeke3/q6where.png)
 
 ```
 SELECT airport.name
@@ -178,7 +178,7 @@ JOIN game
 On game.location = airport.ident
 WHERE game.screen_name = 'Ilkka';
 ```
-![q6](week3/week e3/q6.png)
+![q6](week3/weeke3/q6.png)
 
 ## question 7
 ```
@@ -188,7 +188,7 @@ WHERE game.location = airport.ident
 AND airport.iso_country = country.iso_country
 AND game.screen_name = 'Ilkka';
 ```
-![q7where](week3/week e3/q7 where.png)
+![q7where](week3/weeke3/q7where.png)
 
 ```
 SELECT country.name
@@ -199,7 +199,7 @@ JOIN country
 ON airport.iso_country = country.iso_country 
 WHERE game.screen_name = 'Ilkka';
 ```
-![q7](week3/week e3/q7.png)
+![q7](week3/weeke3/q7.png)
 
 
 ## question 8
@@ -210,7 +210,7 @@ WHERE goal.id = goal_reached.goal_id
 AND game.id = goal_reached.game_id
 AND game.screen_name = 'Heini';
 ```
-![q8where](week3/week e3/q8 where.png)
+![q8where](week3/weeke3/q8where.png)
 
 ```
 SELECT goal.name 
@@ -221,7 +221,7 @@ JOIN game
 ON game.id = goal_reached.game_id 
 WHERE game.screen_name = 'Heini';
 ```
-![q8](week3/week e3/q8.png)
+![q8](week3/weeke3/q8.png)
 
 ## question 9
 ```
@@ -233,7 +233,7 @@ AND goal.id = goal_reached.goal_id
 AND game.screen_name = 'Ilkka'
 AND goal.name = 'clouds';
 ```
-![q9where](week3/week e3/q9 where.png)
+![q9where](week3/weeke3/q9where.png)
 
 ```
 SELECT airport.name
@@ -247,7 +247,7 @@ ON goal.id = goal_reached.goal_id
 WHERE game.screen_name = 'Ilkka'
 AND goal.name = 'clouds';
 ```
-![q9](week3/week e3/q9.png)
+![q9](week3/weeke3/q9.png)
 
 
 ## question 10
@@ -261,7 +261,7 @@ AND goal.id = goal_reached.goal_id
 AND game.screen_name = 'Ilkka'
 AND goal.name = 'clouds';
 ```
-![q10where](week3/week e3/q10 where.png)
+![q10where](week3/weeke3/q10where.png)
 
 ```
 SELECT country.name
@@ -276,4 +276,4 @@ JOIN goal
 ON goal.id = goal_reached.goal_id 
 WHERE game.screen_name = 'Ilkka' and goal.name = 'clouds';
 ```
-![q10](week3/week e3/q10.png)
+![q10](week3/weeke3/q10.png)
