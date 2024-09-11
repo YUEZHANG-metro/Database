@@ -194,6 +194,7 @@ AND goal.name = 'clouds';
 ![q9](https://github.com/user-attachments/assets/6b661815-8caf-4283-aa80-17b74fd1d96d)
 
 
+
 ## question 10
 SELECT country.name
 FROM country, airport, game, goal_reached, goal
@@ -218,3 +219,19 @@ JOIN goal
 ON goal.id = goal_reached.goal_id 
 WHERE game.screen_name = 'Ilkka' and goal.name = 'clouds';
 ![q10](https://github.com/user-attachments/assets/153b9d0c-140d-48c6-a167-27bfa3a45c3e)
+
+
+#week 4
+
+## question 1
+'''
+SELECT country.name AS 'country name', airport.name AS 'airport name'
+FROM airport
+JOIN country
+ON airport.iso_country = country.iso_country
+WHERE country.name = 'Finland'
+AND airport.scheduled_service = 'yes';
+'''
+
+![q1](./Users/yue/Desktop/Database/week4/q1.png)
+
