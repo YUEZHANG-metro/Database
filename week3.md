@@ -115,7 +115,7 @@ FROM airport, country
 WHERE airport.iso_country = country.iso_country
 AND airport.continent = 'an';
 ```
-![q3 where](https://github.com/user-attachments/assets/371c6cb2-dced-41b1-b779-1c054bcc3c14)
+![q3where](week3/week e3/q3 where.png)
 
 ```
 SELECT country.name AS 'country_name', airport.name AS 'airport_name'
@@ -133,7 +133,7 @@ FROM airport, game
 WHERE game.location = airport.ident
 AND game.screen_name = 'Heini';
 ```
-![q4 where](https://github.com/user-attachments/assets/72c7dae2-e657-4f1b-a799-b6deac919c02)
+![q4where](week3/week e3/q4 where.png)
 
 ```
 SELECT airport.elevation_ft
@@ -151,7 +151,7 @@ FROM airport, game
 WHERE game.location = airport.ident
 AND game.screen_name = 'Heini';
 ```
-![q5 where](https://github.com/user-attachments/assets/3cdebc45-5221-47e0-8c1a-9c5865ae91b4)
+![q5where](week3/week e3/q5 where.png)
 
 ```
 SELECT airport.elevation_ft * 0.3048 AS elevation_m
@@ -169,7 +169,7 @@ FROM airport, game
 WHERE game.location = airport.ident
 AND game.screen_name = 'Ilkka';
 ```
-![q6 where](https://github.com/user-attachments/assets/9fc578ab-51c0-4833-bab4-55cc99cde895)
+![q6where](week3/week e3/q6 where.png)
 
 ```
 SELECT airport.name
@@ -188,7 +188,7 @@ WHERE game.location = airport.ident
 AND airport.iso_country = country.iso_country
 AND game.screen_name = 'Ilkka';
 ```
-![q7 where](https://github.com/user-attachments/assets/577d9a71-50ba-43b4-b8a3-5073a36f00f4)
+![q7where](week3/week e3/q7 where.png)
 
 ```
 SELECT country.name
@@ -210,7 +210,7 @@ WHERE goal.id = goal_reached.goal_id
 AND game.id = goal_reached.game_id
 AND game.screen_name = 'Heini';
 ```
-![q8 where](https://github.com/user-attachments/assets/a12e973e-268d-4193-a50b-c3084d225f62)
+![q8where](week3/week e3/q8 where.png)
 
 ```
 SELECT goal.name 
@@ -233,7 +233,7 @@ AND goal.id = goal_reached.goal_id
 AND game.screen_name = 'Ilkka'
 AND goal.name = 'clouds';
 ```
-![q9 where](https://github.com/user-attachments/assets/d9fe88c1-3e08-499b-905a-d8e2ce2f21d3)
+![q9where](week3/week e3/q9 where.png)
 
 ```
 SELECT airport.name
@@ -261,7 +261,7 @@ AND goal.id = goal_reached.goal_id
 AND game.screen_name = 'Ilkka'
 AND goal.name = 'clouds';
 ```
-![q10 where](https://github.com/user-attachments/assets/406df64a-10fd-480b-8cb1-31790140d8a6)
+![q10where](week3/week e3/q10 where.png)
 
 ```
 SELECT country.name
