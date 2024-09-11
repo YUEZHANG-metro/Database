@@ -29,8 +29,9 @@ LEFT JOIN airport
 ON game.location = airport.ident
 JOIN country
 ON airport.iso_country = country.iso_country;
-````
+```
 ![q3](week4/q3.png)
+
 
 ## question 4
 ```
