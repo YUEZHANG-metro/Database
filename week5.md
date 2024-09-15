@@ -1,6 +1,5 @@
-##Week5 Exercise6
-
-##question 1
+## Week5 Exercise6
+## question 1
 What is the elevation of the highest airport location?
 ```
 SELECT 
